@@ -1,0 +1,53 @@
+#qna{
+    display:none;
+}
+
+.qBox{
+    background-color:  whitesmoke;
+    text-align : center;
+    border-radius : 20px;
+    font-size: 24px;
+    width : 80%;
+}
+
+.answerList{
+    background-color:  whitesmoke;
+    border-radius : 20px;
+    display : block;
+    width : 80%;
+    border: 0px;
+    font-size : 20px;
+}
+.answerList:hover, .answerList:focus{
+    background-color: pink;
+    color : whitesmoke;
+}
+
+
+
+.statusInfoContainer{
+    width : 80%;
+    height : 20px;
+}
+
+.status {
+    height : 20px;
+    width : 80%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.statusInfo{
+    width : 80%;
+    font-size : 24px;
+    text-align: center;
+    align-items: center;
+}
+
+.statusBar {
+    height : 100%;
+    border-radius: 20px;
+
+    background: rgb(255,202,225);
+    background: linear-gradient(90deg, rgba(255,202,225,1) 0%, rgba(201,225,254,1) 100%);
+}

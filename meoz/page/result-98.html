@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>먼지의 TMI</title>
+
+        <meta charset = "utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        <meta name ="author" content = "kitez">
+        <meta name ="keywords" content = "먼지의 TMI">
+        <meta name ="description" content ="먼지의 TMI">
+
+        <!-- sns share -->
+        <meta property ="og:url" content ="https://meonzs-tmi.netlify.app" />
+        <meta property ="og:title" content ="먼지의 TMI"/>
+        <meta property = "og:type " content ="website"/>
+        <meta property ="og:image" content = "../img/main.png"/>
+        <meta property = "og:description" content = "먼지의 TMI 맞추기"/>
+
+        <!-- favicon -->
+        <link rel ="shortcut icon" href="../img/cat_favicon.png">
+        <link rel ="apple-touch-icon-precomposed" href="img/cat_favicon.png"/>
+
+        <!-- CSS only -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">        
+        <link rel = "stylesheet" href = "../css/default.css">
+        <link rel = "stylesheet" href = "../css/main.css">
+        <link rel = "stylesheet" href = "../css/qna.css">
+        <link rel = "stylesheet" href = "../css/animation.css">
+        <link rel = "stylesheet" href = "../css/result.css">
+    </head>
+
+    <body>
+    <div class="container">
+    <section id = "shareResult" class = "mx-auto my-5 py-5 px-3">
+            <h1 class ="mb-3">[ !? 당신의 점수는 ?! ]</h1>
+            <!-- 해상도에 맞게 img의 크기를 조절-->
+            <div class ="resultname">
+                <p>아쉽네요, 조금만 더 노력하세요. 🤔, <아쉽구먼></p>
+            </div>
+
+            <div id = "resultImg" class="my-3 col-lg-6 col-sm-6 col-md-6 col-12 mx-auto">
+                    <img src="../img/98.png" alt="0" class= "img-fluid"/>
+            </div>
+
+            <div class = "resultdesc">
+                <p>8 ~ 9 맞추신 당신, 조금 아쉽군요. 더 노력하세요.</p>
+            </div>
+
+
+            <script type ="text/javascript">
+                function moveHome(){
+                    location.href = "/index.html";
+                }
+            </script>
+            <button type="button" class="gohome py-2 px-3 mt-3 btn btn-primary mt-3" onclick = "js:moveHome()">참여하기</button>
+    </section>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>먼지의 TMI</title>
+
+        <meta charset = "utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        <meta name ="author" content = "kitez">
+        <meta name ="keywords" content = "먼지의 TMI">
+        <meta name ="description" content ="먼지의 TMI">
+
+        <!-- sns share -->
+        <meta property ="og:url" content ="https://meonzs-tmi.netlify.app" />
+        <meta property ="og:title" content ="먼지의 TMI"/>
+        <meta property = "og:type " content ="website"/>
+        <meta property ="og:image" content = "img/main.png"/>
+        <meta property = "og:description" content = "먼지의 TMI 맞추기"/>
+
+        <!-- favicon -->
+        <link rel ="shortcut icon" href="img/cat_favicon.png">
+        <link rel ="apple-touch-icon-precomposed" href="img/cat_favicon.png"/>
+
+        <!-- CSS only -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">        
+        <link rel = "stylesheet" href = "css/default.css">
+        <link rel = "stylesheet" href = "css/main.css">
+        <link rel = "stylesheet" href = "css/qna.css">
+        <link rel = "stylesheet" href = "css/animation.css">
+        <link rel = "stylesheet" href = "css/result.css">
+
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('525e8a3157e3b0ee9c4b121e869e83cc');
+            Kakao.isInitialized();
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <section id = "main" class ="mx-auto my-5 py-5 px-4">
+                <h1>[ 먼지의 TMI ]</h1>
+                <div class="col-lg-6 col-sm-6 col-md-6 col-12 mx-auto">
+                    <!-- 해상도에 맞게 img의 크기를 조절-->
+                    <img class= "img-fluid" src="img/main.png" alt="mainImage">
+                </div>
+                <p>
+                    먼지의 TMI 맞추기.<br>
+                    만점 못 받으면 실망.<br>
+                    아무튼 그럼.
+                </p>
+
+                <button type="button" class="btn btn-primary mt-3" onclick = "js:begin()">시작하기</button>
+            </section>
+
+            <section id = "qna">
+                <div class = "statusInfoContainer mx-auto">
+                    <div class = "statusInfo mx-auto mt-5 mb-2">
+                    
+                    </div>
+                </div>  
+                
+                <div class ="status mx-auto mt-2">
+                    <div class = "statusBar">
+
+                    </div>
+                </div>
+
+                <div class = "qBox my-5 py-3 mx-auto">
+                
+                </div>
+
+                <div class = "answerBox">
+
+                </div>
+
+            </section>
+
+            <section id = "result" class = "mx-auto my-5 py-5 px-3">
+                 <h1 class ="mb-3">[ !? 당신의 점수는 ?! ]</h1>
+                    <!-- 해상도에 맞게 img의 크기를 조절-->
+                    <div class ="resultname">
+
+                    </div>
+
+                    <div id = "resultImg" class="my-3 col-lg-6 col-sm-6 col-md-6 col-12 mx-auto">
+                    
+                    </div>
+
+                    <div class = "resultdesc">
+
+                    </div>
+
+                    <div id = "rankContainer" class = "py-1 mt-2 ">
+
+                    </div>
+                    <button type="button" class="kakao py-2 px-3 mt-3 btn btn-primary mt-3" onclick = "js:setShare()">공유하기</button>
+            </section>
+        </div>
+        <script src = "js/data.js" charset="utf-8"></script>
+        <script src = "js/start.js" charset="utf-8"></script>
+        <script src = "js/share.js" charset="utf-8"></script>
+
+
+    </body>
+</html>
